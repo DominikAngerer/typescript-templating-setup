@@ -1,0 +1,8 @@
+Ichnode_modules
+.tmp
+.sass-cache
+temp
+dist
+bower_components
+.DS_Store
+.idea
