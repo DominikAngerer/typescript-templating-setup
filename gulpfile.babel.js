@@ -109,14 +109,14 @@ gulp.task('images', function () {
     }))
     .pipe(gulp.dest('dist/images'))
     .pipe(size({
-      title: "images"
+      title: 'images'
     }))
 })
 
 gulp.task('default', ['clean', 'version', 'templates', 'styles', 'scripts', 'scripts:vendor', 'fonts', 'images', 'content'], function () {
   browserSync.init({
     server: {
-        baseDir: "./dist"
+        baseDir: './dist'
     },
     notify: true,
     open: true,
@@ -134,7 +134,7 @@ gulp.task('build', ['clean', 'version', 'templates', 'styles', 'scripts', 'scrip
 function string_src(filename, string) {
   var src = require('stream').Readable({ objectMode: true })
   src._read = function () {
-    this.push(new File({ cwd: "", base: "", path: filename, contents: new Buffer(string) }))
+    this.push(new File({ cwd: '', base: '', path: filename, contents: new Buffer(string) }))
     this.push(null)
   }
   return src
