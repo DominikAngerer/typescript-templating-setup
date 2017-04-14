@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">typescript-templating-steup</h1>
+  <h1 align="center">typescript-templating-setup</h1>
   <p align="center">A simple setup to template static website's using handlebars, typescript and sass</p>
 </p>
 <br><br>
